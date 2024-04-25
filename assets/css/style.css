@@ -286,6 +286,19 @@
   border-radius: 10px;
   top: 10%;
 }
+.pointer_none {
+  pointer-events: none;
+}
+.gradient_overlay::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 120%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  top: 0;
+  left: -10%;
+  z-index: -1;
+}
 @media (min-width: 992px) {
   :root {
     /* font-size */
