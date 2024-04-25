@@ -91,11 +91,65 @@
                                     <div style="width:14%"
                                         class="fw-medium mb-0 text_gray d-flex align-items-center gap-3 fs_xs ps-4">
                                         <img src="/assets/images/svg/settings.svg" alt="">
-                                        <img src="/assets/images/svg/settings.svg" alt="">
+                                        <!--MODAL-OPEN-BUTTON-->
+                                        <img data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                            src=" /assets/images/svg/settings.svg" alt="">
                                         <img src="/assets/images/svg/settings.svg" alt="">
                                     </div>
                                 </div>
-                                <div class="table_row px-4 d-flex w-100 align-items-start">
+                                <!-- Modal -->
+                                <div class="modal fade translate-middle-x" style="left: 50%;" id="staticBackdrop"
+                                    data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div style="max-width: 606px !important; max-height: 458px !important;"
+                                        class="modal-dialog">
+                                        <div class="modal-content modal_border">
+                                            <div class="modal-header d-flex justify-content-between"
+                                                style="padding:35px 28px 30px 28px !important;">
+                                                <!----MODAL-TITLE---->
+                                                <div class="d-flex align-items-center">
+                                                    <img style="width: 22px; height: 22px;"
+                                                        src="./assets/images/svg/share-icon.svg" alt="">
+                                                    <h5 class=" mb-0 fw-bold fs_base text_gray"
+                                                        style="margin-left: 12px;">Share
+                                                        Deal Link
+                                                    </h5>
+                                                </div>
+                                                <img class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                                    src="./assets/images/svg/close-icon.svg" alt="btn-close">
+                                            </div>
+                                            <hr class="my-0" style=" background-color: #D9D9D9; height: 1px;">
+                                            <!----MODAL-BODY---->
+                                            <div class="modal-body modal_form_padding">
+                                                <form class="modal_form">
+                                                    <label style="margin-bottom: 7px;"
+                                                        class="fs_xs fw-medium text_gray text-capitalize"
+                                                        for="mail">Email
+                                                        address</label>
+                                                    <br>
+                                                    <input class="w-100 border-0"
+                                                        style="margin-bottom: 20px; background-color:#F1F8F8; padding: 18px 30px 19px 30px; border-radius: 5px; outline: none;"
+                                                        type="email" id="mail" placeholder="marknagelvoort@gmail.com">
+                                                    <br>
+                                                    <label style="margin-bottom: 7px;"
+                                                        class="fs_xs fw-medium text_gray text-capitalize"
+                                                        for="number">Phone number</label> <br>
+                                                    <input class="w-100 border-0"
+                                                        style="margin-bottom: 20px; background-color:#F1F8F8; padding: 18px 30px 19px 30px; border-radius: 5px; outline: none;"
+                                                        type="number" id="number" placeholder="(847) 653-6916">
+                                                </form>
+                                            </div>
+                                            <hr class="my-0">
+                                            <!----MODAL-FOOTER---->
+                                            <div class="modal-footer mx-auto" style="padding:30px 0 40px 0 !important">
+                                                <button class="m-0 fw-bold text-white fs_sm bg_primary text-uppercase"
+                                                    style="padding: 21px 35px; border-radius: 5px; border: 0;">Share
+                                                    Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="table_row px-4 d-flex w-100 align-items-start">
                                     <p style="width: 8%;" class="fw-medium mb-0 text_gray fs_xs">26161</p>
                                     <p style="width: 16%;" class="fw-medium mb-0 text_gray fs_xs">Customer 2</p>
                                     <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">Cash</p>
@@ -110,7 +164,7 @@
                                         <img src="/assets/images/svg/settings.svg" alt="">
                                         <img src="/assets/images/svg/settings.svg" alt="">
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="d-flex p-4 align-items-center justify-content-between table_footer">
