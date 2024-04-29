@@ -384,8 +384,13 @@
   padding: 40px 25px;
 }
 
-.modal-content {
-  top: 149px;
+.waiting_modal_width {
+  max-width: 100%;
+}
+
+/*--waiting-period-dropdown--*/
+.dropdown {
+  -webkit-appearance: none;
 }
 
 @media (min-width: 992px) {
@@ -429,6 +434,20 @@
   /*---modal---*/
   .modal_form_padding {
     padding: 40px 50px !important;
+  }
+
+  .waiting_modal_width {
+    width: 606px !important;
+    max-width: 606px !important;
+  }
+
+  .waiting_period_modal_center {
+    transform: translate(-8%, -50%) !important;
+  }
+
+  .modal-lg,
+  .modal-xl {
+    --bs-modal-width: 1206px !important;
   }
 }
 

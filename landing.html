@@ -14,7 +14,9 @@
     <nav class="container-fluid bg-white overflow-hidden">
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
-                <img class="page_logo" src="/assets/images/svg/pagelogo.svg" alt="pagelogo">
+                <a href="#">
+                    <img class="page_logo" src="/assets/images/svg/pagelogo.svg" alt="pagelogo">
+                </a>
                 <span class="sponser_logo">
                     <img class="w-100" src="/assets/images/svg/menu.svg" alt="menu">
                 </span>
@@ -51,7 +53,7 @@
                             class="bg_primary d-flex align-items-center justify-content-between py-2 py-lg-3 px-3 px-lg-4">
                             <p class="text-white font_black fs_3xl mb-0">All Deals</p>
                             <div class="w-75 d-flex justify-content-end align-items-center gap-4">
-                                <div class="d-flex align-items-center me-3 gap-2">
+                                <div class="d-flex align-items-center me-3 gap-2 cursor_pointer">
                                     <img src="/assets/images/svg/filter.svg" alt="filter">
                                     <p class="text-white fs_base fw-medium mb-0 me-1">Filter</p>
                                     <img src="/assets/images/svg/down-arrow.svg" alt="filter">
@@ -90,23 +92,80 @@
                                     </p>
                                     <div style="width:14%"
                                         class="fw-medium mb-0 text_gray d-flex align-items-center gap-3 fs_xs ps-4">
-                                        <img src="/assets/images/svg/settings.svg" alt="">
+
+                                        <button class=" border-0 bg-transparent" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop" type="button">
+                                            <img src="/assets/images/svg/eye-icon.svg" alt="show-hide-icon">
+                                        </button>
                                         <!--MODAL-OPEN-BUTTON-->
-                                        <img data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                            src=" /assets/images/svg/settings.svg" alt="">
-                                        <img src="/assets/images/svg/settings.svg" alt="">
+                                        <a href="#">
+                                            <img width="20" data-bs-toggle="modal" href="#exampleModalToggle"
+                                                role="button" src="/assets/images/svg/share-icon.svg"
+                                                alt="share-button">
+                                        </a>
+                                        <a href="#">
+                                            <img src="/assets/images/svg/delete.svg" alt="delete-button">
+                                        </a>
                                     </div>
                                 </div>
-                                <!-- Modal -->
-                                <div class="modal fade translate-middle-x" style="left: 50%;" id="staticBackdrop"
-                                    data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div style="max-width: 606px !important; max-height: 458px !important;"
-                                        class="modal-dialog">
-                                        <div class="modal-content modal_border">
+                                <!-- WAITING-PERIOD-Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog w-100 waiting_period_modal_center"
+                                        style="top: 50%; transform: translateY(-50%);">
+                                        <div class="modal-content waiting_modal_width" style="height: 430px;">
+                                            <div class="modal-header ps-0 pt-0 pb-0" style="padding-right: 30px;">
+                                                <div class="d-flex align-items-center"
+                                                    style="margin-top:28px; margin-left: 35px;">
+                                                    <img src="/assets/images/svg/clock.svg" alt="clock">
+                                                    <h5 style="margin-left: 12px;"
+                                                        class="modal-title fs_base text_gray fw-bold"
+                                                        id="staticBackdropLabel">Waiting Period</h5>
+                                                </div>
+                                                <button style="margin-top: 25px;" type="button"
+                                                    class=" bg-transparent border-0 ms-auto" data-bs-dismiss="modal">
+                                                    <img src="/assets/images/svg/close-icon.svg" alt="close-button">
+                                                </button>
+                                            </div>
+                                            <hr style="margin-top: 28px; margin-bottom: 40px;">
+                                            <div class="modal-body pt-0"
+                                                style="padding-left: 50px;padding-right: 50px;padding-bottom: 57px;">
+                                                <label class="css-select-moz fs_xs fw-medium text_gray w-100"
+                                                    for="state">Waiting
+                                                    period<br>
+                                                    <select id="state"
+                                                        class="dropdown bg_light w-100 border-0 text_gray fw-semibold"
+                                                        style="padding: 18px 21px 19px 30px; outline: none; border-radius: 5px; margin-top: 7px;"
+                                                        name="user_state">
+                                                        <optgroup label="">
+                                                            <option value="10Minutes">10Minutes</option>
+                                                            <option value="20Minutes">20Minutes</option>
+                                                            <option selected value="30Minutes">30Minutes</option>
+                                                        </optgroup>
+                                                    </select>
+                                                    <div style="position: absolute; right: 13%; top: 30%;">
+                                                        <img src="/assets/images/svg/dropdown_arrow.svg" alt="">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <hr class="mt-0" style="margin-bottom: 30px;">
+                                            <div class="modal-footer pt-0" style="margin-bottom: 40px;">
+                                                <button data-bs-dismiss="modal"
+                                                    class="border-0 bg_primary fs_sm fw-bold text-white mx-auto my-0"
+                                                    style="padding: 21px 35px; border-radius: 5px;"
+                                                    type="button">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LINK-SHARE-Modal -->
+                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
                                             <div class="modal-header d-flex justify-content-between"
                                                 style="padding:35px 28px 30px 28px !important;">
-                                                <!----MODAL-TITLE---->
                                                 <div class="d-flex align-items-center">
                                                     <img style="width: 22px; height: 22px;"
                                                         src="./assets/images/svg/share-icon.svg" alt="">
@@ -115,11 +174,11 @@
                                                         Deal Link
                                                     </h5>
                                                 </div>
-                                                <img class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                                                    src="./assets/images/svg/close-icon.svg" alt="btn-close">
+                                                <img class="btn-close cursor_pointer" data-bs-dismiss="modal"
+                                                    aria-label="Close" src="./assets/images/svg/close-icon.svg"
+                                                    alt="btn-close">
                                             </div>
                                             <hr class="my-0" style=" background-color: #D9D9D9; height: 1px;">
-                                            <!----MODAL-BODY---->
                                             <div class="modal-body modal_form_padding">
                                                 <form class="modal_form">
                                                     <label style="margin-bottom: 7px;"
@@ -133,23 +192,48 @@
                                                     <br>
                                                     <label style="margin-bottom: 7px;"
                                                         class="fs_xs fw-medium text_gray text-capitalize"
-                                                        for="number">Phone number</label> <br>
+                                                        for="number">Phone
+                                                        number</label> <br>
                                                     <input class="w-100 border-0"
                                                         style="margin-bottom: 20px; background-color:#F1F8F8; padding: 18px 30px 19px 30px; border-radius: 5px; outline: none;"
                                                         type="number" id="number" placeholder="(847) 653-6916">
                                                 </form>
+
                                             </div>
                                             <hr class="my-0">
-                                            <!----MODAL-FOOTER---->
                                             <div class="modal-footer mx-auto" style="padding:30px 0 40px 0 !important">
-                                                <button class="m-0 fw-bold text-white fs_sm bg_primary text-uppercase"
-                                                    style="padding: 21px 35px; border-radius: 5px; border: 0;">Share
-                                                    Now</button>
+                                                <button style="padding: 21px 35px; border-radius: 5px; border: 0;"
+                                                    class="m-0 fw-bold text-white fs_sm bg_primary text-uppercase"
+                                                    data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                                                    data-bs-dismiss="modal">Share Now</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="table_row px-4 d-flex w-100 align-items-start">
+                                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div style="width: 557px; height: 367px;" class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="border-0 bg-transparent ms-auto" type="button"
+                                                    data-bs-dismiss="modal" aria-label="Close">
+                                                    <img src="./assets/images/svg/close-icon.svg" alt="close-btn">
+                                                </button>
+                                            </div>
+                                            <div class="modal-body d-flex flex-column justify-content-center">
+                                                <!-- Hide this modal and show the first with the button below. -->
+                                                <img class="mx-auto" width="95" src="./assets/images/svg/like-icon.svg"
+                                                    alt="like-btn">
+                                                <p style="margin-top: 27px;"
+                                                    class="fw-bold text_gray fs_base text-center">Link shared <span
+                                                        class="d-block">Successfully!</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="table_row px-4 d-flex w-100 align-items-start">
                                     <p style="width: 8%;" class="fw-medium mb-0 text_gray fs_xs">26161</p>
                                     <p style="width: 16%;" class="fw-medium mb-0 text_gray fs_xs">Customer 2</p>
                                     <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">Cash</p>
@@ -164,7 +248,7 @@
                                         <img src="/assets/images/svg/settings.svg" alt="">
                                         <img src="/assets/images/svg/settings.svg" alt="">
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                         <div class="d-flex p-4 align-items-center justify-content-between table_footer">
@@ -174,7 +258,148 @@
                                 <button class="pagination_btn rounded fw-medium border-0">3</button>
                                 <button class="pagination_btn rounded fw-medium border-0">4</button>
                             </div>
-                            <button class="add_btn rounded fs_sm fw-bold text-uppercase">Add new deal</button>
+                            <!-----NEW-DEAL-BTN----->
+                            <button data-bs-toggle="modal" href="#exampleModalTogglee" role="button"
+                                class="add_btn rounded fs_sm fw-bold text-uppercase">Add new deal</button>
+                            <!------MODAL--MODAL-------->
+                            <div class="modal fade" id="exampleModalTogglee" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabell" tabindex="-1">
+                                <div class="modal-dialog position-fixed"
+                                    style="top: auto;left: 50%; bottom: 278px; right: auto; transform: translateX(-50%);">
+                                    <div class="modal-content bg-transparent border-0">
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <button class="bg-white border-0 text-uppercase text_gray fw-bold fs_sm"
+                                                style="padding: 21px 35px; border-radius: 5px;" type="button"
+                                                data-bs-target="#exampleModalToggle22" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle22" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel22" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header d-flex justify-content-between align-items-center"
+                                            style="background-color: #179B9B; padding: 25px 30px 25px 35px !important;">
+                                            <h5 class="modal-title fw-bolder text-white fs_3xl"
+                                                id="exampleModalToggleLabel22">ABC Dealer Group</h5>
+                                            <button
+                                                class=" border-0 bg-transparent fw-medium fs_base text-white d-flex align-items-center"
+                                                type="button">
+                                                <img style="margin-right: 8px;"
+                                                    src="/assets/images/svg/white-share-icon.svg" alt="share-button">
+                                                Share a Link
+                                            </button>
+                                        </div>
+                                        <div class="modal-body" style="padding: 28px 0 0 0 !important;">
+                                            <form class="w-100 d-flex flex-wrap">
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-left: 55px; padding-right: 15px;"
+                                                    for="firstname">First name
+                                                    <input id="firstname" required class="w-100 bg_light border-0"
+                                                        type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-right: 135px; padding-left: 15px;"
+                                                    for="middlename">Middle
+                                                    name
+                                                    <input id="middlename" class="w-100 border-0 bg_light" type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
+                                                    for="lastname">Last
+                                                    name
+                                                    <input id="lastname" required class="w-100 bg_light border-0"
+                                                        type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
+                                                    for="phonenumber">Phone
+                                                    number
+                                                    <input id="phonenumber" required class="w-100 bg_light border-0"
+                                                        type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
+                                                    for="email">Email
+                                                    <input id="email" required class="w-100 bg_light border-0"
+                                                        type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
+                                                    for="streetname">Street
+                                                    Address
+                                                    <input id="streetname" required class="w-100 bg_light border-0"
+                                                        type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
+                                                    for="city">City
+                                                    <input id="city" required class="w-100 bg_light border-0"
+                                                        type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
+                                                    for="state">State
+                                                    <input id="state" required class="w-100 bg_light border-0"
+                                                        type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
+                                                    for="zipcode">Zip
+                                                    code
+                                                    <input id="zipcode" required class="w-100 bg_light border-0"
+                                                        type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
+                                                    for="vehicle">Vehicle
+                                                    <input id="vehicle" class="w-100 border-0 bg_light" type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
+                                                    for="VINnumber">VIN
+                                                    number
+                                                    <input id="VINnumber" class="w-100 border-0 bg_light" type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <label class="w-50 fs_xs fw-medium text_gray"
+                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
+                                                    for="vehiclecolor">Vehicle
+                                                    color
+                                                    <input id="vehiclecolor" class="w-100 border-0 bg_light" type="text"
+                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                </label>
+                                                <div
+                                                    style="width: 120%; background-color: #D9D9D9; height: 1px; margin-top: 82px; margin-bottom: 18px;">
+                                                </div>
+                                                <button
+                                                    style="padding: 21px 35px !important; border-radius: 5px; margin-right: 20px; margin-bottom: 18px;"
+                                                    class="border-0 ms-auto fs_sm fw-bold text-white text-uppercase bg_primary"
+                                                    type="submit">Create
+                                                    deal</button>
+                                            </form>
+                                        </div>
+
+                                        <!-- data-bs-target="#exampleModalTogglee"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal" -->
+                                        <!-- <div class="modal-footer">
+                                            <button formaction="myaction" type="submit" class="btn btn-primary" >Create deal</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
