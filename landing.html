@@ -81,33 +81,37 @@
                                     </p>
                                     <p style="width: 14%;" class="fw-semibold mb-0 text-black fs_xs ps-4">Action </p>
                                 </div>
-                                <div class="table_row px-4 d-flex w-100 align-items-start">
-                                    <p style="width: 8%;" class="fw-medium mb-0 text_gray fs_xs">26166</p>
-                                    <p style="width: 16%;" class="fw-medium mb-0 text_gray fs_xs">Mark Nagelvoort</p>
-                                    <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">Finance</p>
-                                    <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">New </p>
-                                    <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">Vehicle Sale </p>
-                                    <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">12/10/2023 </p>
-                                    <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">1GXUDEE80DHZZUA
-                                    </p>
-                                    <div style="width:14%"
-                                        class="fw-medium mb-0 text_gray d-flex align-items-center gap-3 fs_xs ps-4">
-
-                                        <button class=" border-0 bg-transparent" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop" type="button">
-                                            <img src="/assets/images/svg/eye-icon.svg" alt="show-hide-icon">
-                                        </button>
-                                        <!--MODAL-OPEN-BUTTON-->
-                                        <a href="#">
-                                            <img width="20" data-bs-toggle="modal" href="#exampleModalToggle"
-                                                role="button" src="/assets/images/svg/share-icon.svg"
-                                                alt="share-button">
-                                        </a>
-                                        <a href="#">
-                                            <img src="/assets/images/svg/delete.svg" alt="delete-button">
-                                        </a>
+                             
+                                <template id="template">
+                                    <div class="table_row px-4 d-flex w-100 align-items-start">
+                                        <p style="width: 8%;" class="fw-medium mb-0 text_gray fs_xs">26166</p>
+                                        <p style="width: 16%;" class="fw-medium mb-0 text_gray fs_xs">Mark Nagelvoort</p>
+                                        <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">Finance</p>
+                                        <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">New </p>
+                                        <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">Vehicle Sale </p>
+                                        <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">12/10/2023 </p>
+                                        <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">1GXUDEE80DHZZUA
+                                        </p>
+                                        <div style="width:14%"
+                                            class="fw-medium mb-0 text_gray d-flex align-items-center gap-3 fs_xs ps-4">
+    
+                                            <button class=" border-0 bg-transparent" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" type="button">
+                                                <img src="/assets/images/svg/eye-icon.svg" alt="show-hide-icon">
+                                            </button>
+                                            <!--MODAL-OPEN-BUTTON-->
+                                            <a href="#">
+                                                <img width="20" data-bs-toggle="modal" href="#exampleModalToggle"
+                                                    role="button" src="/assets/images/svg/share-icon.svg"
+                                                    alt="share-button">
+                                            </a>
+                                            <a href="#">
+                                                <img src="/assets/images/svg/delete.svg" alt="delete-button">
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
+                                </template>
+                                <div id="table_container"></div>
                                 <!-- WAITING-PERIOD-Modal -->
                                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
@@ -233,22 +237,7 @@
                                 </div>
 
 
-                                <div class="table_row px-4 d-flex w-100 align-items-start">
-                                    <p style="width: 8%;" class="fw-medium mb-0 text_gray fs_xs">26161</p>
-                                    <p style="width: 16%;" class="fw-medium mb-0 text_gray fs_xs">Customer 2</p>
-                                    <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">Cash</p>
-                                    <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">Used </p>
-                                    <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">Vehicle Sale </p>
-                                    <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">12/10/2023 </p>
-                                    <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">QEVRUDEE80D778S
-                                    </p>
-                                    <div style="width:14%"
-                                        class="fw-medium mb-0 text_gray d-flex align-items-center gap-3 fs_xs ps-4">
-                                        <img src="/assets/images/svg/settings.svg" alt="">
-                                        <img src="/assets/images/svg/settings.svg" alt="">
-                                        <img src="/assets/images/svg/settings.svg" alt="">
-                                    </div>
-                                </div>
+                              
                             </div>
                         </div>
                         <div class="d-flex p-4 align-items-center justify-content-between table_footer">
