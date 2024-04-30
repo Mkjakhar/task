@@ -81,11 +81,12 @@
                                     </p>
                                     <p style="width: 14%;" class="fw-semibold mb-0 text-black fs_xs ps-4">Action </p>
                                 </div>
-                             
+
                                 <template id="template">
                                     <div class="table_row px-4 d-flex w-100 align-items-start">
                                         <p style="width: 8%;" class="fw-medium mb-0 text_gray fs_xs">26166</p>
-                                        <p style="width: 16%;" class="fw-medium mb-0 text_gray fs_xs">Mark Nagelvoort</p>
+                                        <p style="width: 16%;" class="fw-medium mb-0 text_gray fs_xs">Mark Nagelvoort
+                                        </p>
                                         <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">Finance</p>
                                         <p style="width: 10%;" class="fw-medium mb-0 text_gray fs_xs">New </p>
                                         <p style="width: 14%;" class="fw-medium mb-0 text_gray fs_xs">Vehicle Sale </p>
@@ -94,7 +95,7 @@
                                         </p>
                                         <div style="width:14%"
                                             class="fw-medium mb-0 text_gray d-flex align-items-center gap-3 fs_xs ps-4">
-    
+
                                             <button class=" border-0 bg-transparent" data-bs-toggle="modal"
                                                 data-bs-target="#staticBackdrop" type="button">
                                                 <img src="/assets/images/svg/eye-icon.svg" alt="show-hide-icon">
@@ -237,7 +238,7 @@
                                 </div>
 
 
-                              
+
                             </div>
                         </div>
                         <div class="d-flex p-4 align-items-center justify-content-between table_footer">
@@ -253,11 +254,20 @@
                             <!------MODAL--MODAL-------->
                             <div class="modal fade" id="exampleModalTogglee" aria-hidden="true"
                                 aria-labelledby="exampleModalToggleLabell" tabindex="-1">
-                                <div class="modal-dialog position-fixed"
-                                    style="top: auto;left: 50%; bottom: 278px; right: auto; transform: translateX(-50%);">
+                                <div class="modal-dialog continue_video_width modal-dialog-centered">
                                     <div class="modal-content bg-transparent border-0">
-                                        <div class="modal-body d-flex justify-content-center">
-                                            <button class="bg-white border-0 text-uppercase text_gray fw-bold fs_sm"
+                                        <div class="modal-body">
+                                            <iframe style="border-radius: 30px;" width="100%" height="513"
+                                                src="https://www.youtube.com/embed/YwHXniAUMQo"
+                                                title="Coding Is No Difficult • Mark Zuckerberg • Motivational Video (HD)"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button
+                                                class="bg-white border-0 text-uppercase text_gray fw-bold fs_sm close-continue-btn"
                                                 style="padding: 21px 35px; border-radius: 5px;" type="button"
                                                 data-bs-target="#exampleModalToggle22" data-bs-toggle="modal"
                                                 data-bs-dismiss="modal">Continue</button>
@@ -265,7 +275,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="exampleModalToggle22" aria-hidden="true"
+                            <div class="modal  fade" id="exampleModalToggle22" aria-hidden="true"
                                 aria-labelledby="exampleModalToggleLabel22" tabindex="-1">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -282,102 +292,103 @@
                                             </button>
                                         </div>
                                         <div class="modal-body" style="padding: 28px 0 0 0 !important;">
-                                            <form class="w-100 d-flex flex-wrap">
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-left: 55px; padding-right: 15px;"
-                                                    for="firstname">First name
-                                                    <input id="firstname" required class="w-100 bg_light border-0"
-                                                        type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-right: 135px; padding-left: 15px;"
-                                                    for="middlename">Middle
-                                                    name
-                                                    <input id="middlename" class="w-100 border-0 bg_light" type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
-                                                    for="lastname">Last
-                                                    name
-                                                    <input id="lastname" required class="w-100 bg_light border-0"
-                                                        type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
-                                                    for="phonenumber">Phone
-                                                    number
-                                                    <input id="phonenumber" required class="w-100 bg_light border-0"
-                                                        type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
-                                                    for="email">Email
-                                                    <input id="email" required class="w-100 bg_light border-0"
-                                                        type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
-                                                    for="streetname">Street
-                                                    Address
-                                                    <input id="streetname" required class="w-100 bg_light border-0"
-                                                        type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
-                                                    for="city">City
-                                                    <input id="city" required class="w-100 bg_light border-0"
-                                                        type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
-                                                    for="state">State
-                                                    <input id="state" required class="w-100 bg_light border-0"
-                                                        type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
-                                                    for="zipcode">Zip
-                                                    code
-                                                    <input id="zipcode" required class="w-100 bg_light border-0"
-                                                        type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
-                                                    for="vehicle">Vehicle
-                                                    <input id="vehicle" class="w-100 border-0 bg_light" type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-left: 55px; padding-right: 15px; margin-top: 20px;"
-                                                    for="VINnumber">VIN
-                                                    number
-                                                    <input id="VINnumber" class="w-100 border-0 bg_light" type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <label class="w-50 fs_xs fw-medium text_gray"
-                                                    style="padding-right: 135px; padding-left: 15px; margin-top: 20px;"
-                                                    for="vehiclecolor">Vehicle
-                                                    color
-                                                    <input id="vehiclecolor" class="w-100 border-0 bg_light" type="text"
-                                                        style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
-                                                </label>
-                                                <div
-                                                    style="width: 120%; background-color: #D9D9D9; height: 1px; margin-top: 82px; margin-bottom: 18px;">
+
+                                            <form>
+                                                <div class="d-flex create_deal_form" style="gap: 30px;">
+                                                    <label class="fs_xs fw-medium text_gray" for="firstname">First
+                                                        name
+                                                        <input id="firstname" required class="w-100 bg_light border-0"
+                                                            type="text"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                    <label class="fs_xs fw-medium text_gray" for="middlename">Middle
+                                                        name
+                                                        <input id="middlename" class="w-100 border-0 bg_light"
+                                                            type="text"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
                                                 </div>
-                                                <button
-                                                    style="padding: 21px 35px !important; border-radius: 5px; margin-right: 20px; margin-bottom: 18px;"
-                                                    class="border-0 ms-auto fs_sm fw-bold text-white text-uppercase bg_primary"
-                                                    type="submit">Create
-                                                    deal</button>
+                                                <div class="d-flex create_deal_form"
+                                                    style="gap: 30px; margin-top: 20px;">
+                                                    <label class="fs_xs fw-medium text_gray" for="firstname">Last
+                                                        name
+                                                        <input id="firstname" required class="w-100 bg_light border-0"
+                                                            type="text"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                    <label class="fs_xs fw-medium text_gray" for="middlename">Phone
+                                                        number
+                                                        <input id="middlename" class="w-100 border-0 bg_light"
+                                                            type="number"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex create_deal_form"
+                                                    style="gap: 30px; margin-top: 20px;">
+                                                    <label class="fs_xs fw-medium text_gray" for="firstname">Email
+                                                        <input id="firstname" required class="w-100 bg_light border-0"
+                                                            type="email"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                    <label class="fs_xs fw-medium text_gray" for="middlename">Street
+                                                        Address
+                                                        <input id="middlename" class="w-100 border-0 bg_light"
+                                                            type="number"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex create_deal_form"
+                                                    style="gap: 30px; margin-top: 20px;">
+                                                    <label class="fs_xs fw-medium text_gray" for="firstname">City
+                                                        <input id="firstname" required class="w-100 bg_light border-0"
+                                                            type="text"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                    <label class="fs_xs fw-medium text_gray" for="middlename">State
+                                                        <input id="middlename" class="w-100 border-0 bg_light"
+                                                            type="text"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex create_deal_form"
+                                                    style="gap: 30px; margin-top: 20px;">
+                                                    <label class="fs_xs fw-medium text_gray" for="firstname">Zip
+                                                        code
+                                                        <input id="firstname" required class="w-100 bg_light border-0"
+                                                            type="number"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                    <label class="fs_xs fw-medium text_gray" for="middlename">Vehicle
+                                                        <input id="middlename" class="w-100 border-0 bg_light"
+                                                            type="text"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex create_deal_form"
+                                                    style="gap: 30px; margin-top: 20px;">
+                                                    <label class="fs_xs fw-medium text_gray" for="firstname">VIN
+                                                        number
+                                                        <input id="firstname" required class="w-100 bg_light border-0"
+                                                            type="number"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                    <label class="fs_xs fw-medium text_gray" for="middlename">Vehicle
+                                                        color
+                                                        <input id="middlename" class="w-100 border-0 bg_light"
+                                                            type="text"
+                                                            style="margin-top: 7px; outline:none; height: 50px;border-radius:5px; padding-left: 15px; padding-right: 15px;">
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    style="width: 100%; background-color: #D9D9D9; height: 1px; margin-top: 82px; margin-bottom: 18px;">
+                                                </div>
+                                                <div class=" d-flex justify-content-end">
+                                                    <button
+                                                        style="padding: 21px 35px !important; border-radius: 5px; margin-right: 20px; margin-bottom: 18px;"
+                                                        class="border-0 ms-auto fs_sm fw-bold text-white text-uppercase bg_primary"
+                                                        type="submit">Create
+                                                        deal</button>
+                                                </div>
                                             </form>
                                         </div>
                                     </div>

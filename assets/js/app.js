@@ -68,5 +68,7 @@ function renderData(dataArray) {
   });
 }
 
+
+
 // Call renderData function with the sample data array
 renderData(dataArray);
