@@ -19,7 +19,7 @@
                         <div
                             class="col-xl-7 overflow-hidden px-lg-5 px-4 d-flex align-items-end col-6 position-relative z-1">
                             <img class="position-absolute top-0 z-n1 start-0 w-100 h-100 object-fit-cover pointer_none"
-                                src="/assets/images/png/demo1.png" alt="demo1">
+                                src="/assets/images/png/login-gif.gif" alt="demo1">
                             <div class="position-relative gradient_overlay py-5">
                                 <h3 class="font_black leading_100 text-white fs_6xl">AI Powered F&I</h3>
                                 <p class="text-white mb-0 fs_xl text-uppercase fw-medium">Delivering an unparalleled
@@ -32,18 +32,18 @@
                         <div class="col-xl-5 col-6 bg-white p-lg-5 py-5 px-4">
                             <div class="py-lg-5 d-flex flex-column align-items-center">
                                 <img class="page_logo" src="/assets/images/svg/pagelogo.svg" alt="pagelogo">
-                                <input type="text" placeholder="User ID"
+                                <input type="text" required placeholder="User ID"
                                     class="py-lg-4 py-3 mt-5 fw-medium fs_sm text_gray mb-3 login_input w-100 border-0 bg_light">
                                 <div class="position-relative w-100">
-                                    <img onclick="showPassword()"
+                                    <img onclick="showPassword(this)"
                                         class="position-absolute translate-middle-y cursor_pointer eye_position top-50"
                                         src="/assets/images/svg/eye.svg" alt="eye">
-                                    <input id="password" type="password" placeholder="Password"
+                                    <input id="password" required type="password" placeholder="Password"
                                         class="py-lg-4 py-3 fw-medium fs_sm text_gray login_input w-100 border-0 bg_light">
                                 </div>
                                 <div class="w-100 d-flex justify-content-between align-items-center mt-3">
                                     <div class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox1">
+                                        <input type="checkbox" required id="checkbox1">
                                         <label for="checkbox1" class="fw-medium mb-0 fs_xs text_gray">Remember
                                             me</label>
                                     </div>
