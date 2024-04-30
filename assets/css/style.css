@@ -267,7 +267,7 @@
   visibility: hidden;
 }
 
-.custom-checkbox input[type="checkbox"]:checked+label:after {
+.custom-checkbox input[type="checkbox"]:checked + label:after {
   visibility: visible;
 }
 
@@ -386,7 +386,23 @@
 .dropdown {
   -webkit-appearance: none;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.eye_line {
+  text-decoration: line-through !important;
+}
+.modal {
+  background-color: #2e302e29;
+  backdrop-filter: blur(7px);
+}
 @media (min-width: 992px) {
   :root {
     /* font-size */
